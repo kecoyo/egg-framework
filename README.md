@@ -1,12 +1,11 @@
-# egg-framework
+# @kecoyo/egg-framework
 
-egg-framework
+Awesome Egg.js Web Framework and Plugin.
 
 ## QuickStart
 
 ```bash
-$ npm install
-$ npm test
+$ npm install @kecoyo/egg-framework
 ```
 
 publish your framework to npm, then change app's framework config:
@@ -14,9 +13,9 @@ publish your framework to npm, then change app's framework config:
 ```js
 // {app_root}/index.js
 {
-  "name": "egg-showcase",
+  "name": "egg-app",
   "egg": {
-    "framework": "yadan"
+    "framework": "@kecoyo/egg-framework"
   }
 }
 ```
