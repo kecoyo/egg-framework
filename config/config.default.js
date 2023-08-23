@@ -25,15 +25,45 @@ module.exports = (appInfo) => {
     files: 10,
     fileExtensions: [
       // image
-      '.jpg', '.jpeg', '.png', '.gif', '.bmp', '.wbmp', '.webp', '.tif', '.psd',
+      '.jpg',
+      '.jpeg',
+      '.png',
+      '.gif',
+      '.bmp',
+      '.wbmp',
+      '.webp',
+      '.tif',
+      '.psd',
       // text
-      '.svg', '.js', '.jsx', '.json', '.css', '.less', '.html', '.htm', '.xml', '.csv',
+      '.svg',
+      '.js',
+      '.jsx',
+      '.json',
+      '.css',
+      '.less',
+      '.html',
+      '.htm',
+      '.xml',
+      '.csv',
       // office
-      '.doc', '.docx', '.ppt', '.pptx', '.xls', '.xlsx', '.pdf',
+      '.doc',
+      '.docx',
+      '.ppt',
+      '.pptx',
+      '.xls',
+      '.xlsx',
+      '.pdf',
       // tar
-      '.zip', '.gz', '.tgz', '.gzip',
+      '.zip',
+      '.gz',
+      '.tgz',
+      '.gzip',
       // video
-      '.mp3', '.mp4', '.avi', '.wav', '.mov',
+      '.mp3',
+      '.mp4',
+      '.avi',
+      '.wav',
+      '.mov',
       // 增加对 .apk 扩展名的支持
       '.apk',
     ],
@@ -61,11 +91,11 @@ module.exports = (appInfo) => {
 
   config.sequelize = {
     dialect: 'mysql', // support: mysql, mariadb, postgres, mssql
+    database: '',
     host: 'localhost',
     port: 3306,
-    database: 'egg-server',
     username: 'root',
-    password: '123456',
+    password: '',
     pool: {
       max: 50,
       min: 0, // 建立连接最长时间
