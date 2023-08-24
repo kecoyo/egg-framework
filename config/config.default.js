@@ -19,6 +19,12 @@ module.exports = (appInfo) => {
     saltRounds: 10, // default 10
   };
 
+  config.bodyParser = {
+    formLimit: '10mb',
+    jsonLimit: '10mb',
+    textLimit: '10mb',
+  };
+
   config.multipart = {
     mode: 'file',
     fileSize: '50mb',
