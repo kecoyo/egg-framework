@@ -8,7 +8,7 @@ module.exports = (option, app) => {
       // app.emit('error', err);
 
       if (err.name === 'HttpResponseError') {
-        ctx.fail(err.code, err.message); // 自定义错误
+        ctx.fail(err.code, err.message, err.data); // 自定义错误
       } else if (err.status === 422) {
         ctx.fail(err.status, err.message, err.errors); // 422，参数错误
       } else {
