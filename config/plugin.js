@@ -29,6 +29,11 @@ exports.errorHandler = {
   package: '@kecoyo/egg-error-handler',
 };
 
+exports.extend = {
+  enable: true,
+  package: '@kecoyo/egg-extend',
+};
+
 exports.sequelize = {
   enable: true,
   package: 'egg-sequelize',
