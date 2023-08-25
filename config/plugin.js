@@ -29,6 +29,11 @@ exports.sequelize = {
   package: 'egg-sequelize',
 };
 
+exports.mysql = {
+  enable: true,
+  package: 'egg-mysql',
+};
+
 exports.jwt = {
   enable: true,
   package: '@kecoyo/egg-jwt',

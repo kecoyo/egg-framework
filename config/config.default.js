@@ -82,7 +82,6 @@ module.exports = (appInfo) => {
     },
   };
 
-  // 配置参数校验器，基于parameter
   config.validate = {
     convert: true, // 对参数可以使用 convertType 规则进行类型转换
     // validateRoot: false, // 限制被验证值必须是一个对象。
@@ -97,11 +96,11 @@ module.exports = (appInfo) => {
 
   config.sequelize = {
     dialect: 'mysql', // support: mysql, mariadb, postgres, mssql
-    database: '',
     host: 'localhost',
     port: 3306,
     username: 'root',
     password: '',
+    database: 'egg-server',
     pool: {
       max: 50,
       min: 0, // 建立连接最长时间
@@ -122,6 +121,18 @@ module.exports = (appInfo) => {
       timestamps: true, // 添加create,update,delete时间戳
     },
     timezone: '+08:00', // 由于orm用的UTC时间，这里必须加上东八区，否则取出来的时间相差8小时
+  };
+
+  config.mysql = {
+    client: {
+      host: 'localhost',
+      port: '3306',
+      user: 'root',
+      password: '',
+      database: 'egg-server',
+    },
+    app: true,
+    agent: false,
   };
 
   config.jwt = {
@@ -173,15 +184,6 @@ module.exports = (appInfo) => {
     },
     app: true,
     agent: false,
-  };
-
-  /**
-   * some description
-   * @member Config#test
-   * @property {String} key - some description
-   */
-  config.test = {
-    key: appInfo.name + '_123456',
   };
 
   return config;
