@@ -34,6 +34,7 @@
     "dist"
   ],
   "dependencies": {
+    "@kecoyo/egg-error-handler": "^1.0.0",
     "@kecoyo/egg-jwt": "^1.0.1",
     "@kecoyo/egg-qiniu": "^1.0.1",
     "@kecoyo/egg-swagger-doc": "^1.0.0",

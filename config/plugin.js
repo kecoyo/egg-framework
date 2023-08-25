@@ -24,6 +24,11 @@ exports.nunjucks = {
   package: 'egg-view-nunjucks',
 };
 
+exports.errorHandler = {
+  enable: true,
+  package: '@kecoyo/egg-error-handler',
+};
+
 exports.sequelize = {
   enable: true,
   package: 'egg-sequelize',
