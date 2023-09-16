@@ -34,27 +34,27 @@ exports.extend = {
   package: '@kecoyo/egg-extend',
 };
 
-exports.sequelize = {
-  enable: true,
-  package: 'egg-sequelize',
-};
-
-exports.mysql = {
-  enable: true,
-  package: 'egg-mysql',
-};
-
 exports.jwt = {
   enable: true,
   package: '@kecoyo/egg-jwt',
 };
 
-exports.qiniu = {
-  enable: true,
-  package: '@kecoyo/egg-qiniu',
-};
-
 exports.swaggerdoc = {
   enable: true,
   package: '@kecoyo/egg-swagger-doc',
+};
+
+exports.sequelize = {
+  enable: false,
+  package: 'egg-sequelize',
+};
+
+exports.mysql = {
+  enable: false,
+  package: 'egg-mysql',
+};
+
+exports.qiniu = {
+  enable: false,
+  package: '@kecoyo/egg-qiniu',
 };
